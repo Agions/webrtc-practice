@@ -1,7 +1,6 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Home from "./pages/Home"
-import About from "./pages/About"
 import Camera from "./pages/Camera"
 import Microphone from "./pages/Microphone"
 import Canvas from "./pages/Canvas"
@@ -11,9 +10,6 @@ function App() {
     <Router>
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/about'>
-          <About />
-        </Route>
         <Route path='/camera'>
           <Camera />
         </Route>
